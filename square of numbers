@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>square</title>
+    <script>
+    function square()
+        {
+            var sum=0;
+            for(var i=1;i<=50;i++)
+                sum=sum+i*i;
+            return sum;
+        }
+        var result=square();
+        document.write("sum of square of numbers from 1 to 50: " +result);
+    </script>
+</head>
+<body></body>
+</html>
