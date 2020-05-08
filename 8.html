@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            function myfun()
+            {
+                var x=window.prompt("Enter a number");
+                try{// it only works in runtime error, in syntax error whole program is not executed
+                    if (isNaN(x))
+                    throw 404//runtime error is like calling a non existing function
+                    else
+                    document.writeln("Try: You entered a number :"+x+"<br>")
+                }
+                catch(e)// an exception is thrown so catch block executes
+                {
+                    if (e==404)
+                    document.writeln("Catch: you did not enter a number<br>")
+                }
+                finally{
+                    document.writeln("Finally: This line is always printed");
+                }
+            }
+            myfun();
+        </script>
+    </body>
+</html>
